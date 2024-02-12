@@ -1,0 +1,14 @@
+#Write a program that takes an integer as input and returns true if the input is a power of two.
+def is_power_of_two(n):
+  if n <= 0:
+    return False
+  while n % 2 == 0:
+    n //= 2
+  return n == 1
+
+# Example usage
+number = int(input("Enter an integer: "))
+if is_power_of_two(number):
+  print(f"{number} is a power of two.")
+else:
+  print(f"{number} is not a power of two.")
